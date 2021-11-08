@@ -1,2 +1,2 @@
-# Repository
-Main repo for our project
+# Website
+Main MERN stack repository
