@@ -1,2 +1,2 @@
 # Website
-Main MERN stack repository
+Main Repo for the stuffs
