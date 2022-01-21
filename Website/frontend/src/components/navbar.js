@@ -1,36 +1,27 @@
-import '../public/nav.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, NavItem, NavDropdown, MenuItem, Nav, Form , FormControl, Button, Container, Header, pullRight} from 'react-bootstrap';
-import React, { Component } from 'react';
+import { Navbar, Container, Nav } from 'react-bootstrap';
+import React from 'react';
+import "../public/nav.css";
 
-function Navigation(){
-    return(
-        <div className="navi">
-            <Navbar inverse collapseOnSelect>
-                <Navbar.Header>
-                    <Navbar.Brand>
-                        <a>React-Bootstrap</a>
-                    </Navbar.Brand>
-                        <Navbar.Toggle />
-                </Navbar.Header>
-                <Navbar.Collapse>
-                    <Nav>
-                        <NavItem eventKey={1}>
-                            Link1
-                        </NavItem>
-                        <NavItem eventKey={2}>
-                            Link2
-                        </NavItem>
-                    </Nav>
-                    <Nav pullRight>
-                        <NavItem eventKey={1}>
-                            Link1
-                        </NavItem>
-                        <NavItem eventKey={2}>
-                            Link1
-                        </NavItem>
-                    </Nav>
-                </Navbar.Collapse>
+function Navigation() {
+    return (
+        <div>
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+                <Container fluid>
+                    <Navbar.Brand href="/">AFCPlushies</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                        <Nav className="ms-auto">
+                            <Nav.Link href="#features" className="navi">How it works</Nav.Link>
+                            <span className="dots">&bull;</span>
+                            <Nav.Link href="#pricing" className="navi">Who we are</Nav.Link>
+                            <span className="dots">&bull;</span>
+                            <Nav.Link href="#pricing" className="navi">What we do</Nav.Link>
+                            <span className="dots">&bull;</span>
+                            <Nav.Link href="#pricing" className="navi">Contact us</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
             </Navbar>
         </div>
     );
