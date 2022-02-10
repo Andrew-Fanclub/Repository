@@ -1,24 +1,22 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import React from 'react';
 import "../public/nav.css";
-import "../routes/contact";
+import Logo from "../images/Logo.png";
 
 function Navigation() {
     return (
         <div>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Container fluid>
-                    <Navbar.Brand href="/">AFCPlushies</Navbar.Brand>
+                    <Navbar.Brand href="/"><img src={Logo} alt="logo" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-auto">
-                            <Nav.Link href="../routes/howWorks" className="navi">How it works</Nav.Link>
+                            <Nav.Link href="/howitworks" className="navi">How it works</Nav.Link>
                             <span className="dots">&bull;</span>
-                            <Nav.Link href="../routes/whoWe" className="navi">Who we are</Nav.Link>
+                            <Nav.Link href="/aboutus" className="navi">Who we are</Nav.Link>
                             <span className="dots">&bull;</span>
-                            <Nav.Link href="../routes/contact" className="navi">Contact us</Nav.Link>
-                            <span className="dots">&bull;</span>
+                            <Nav.Link href="/contact" className="navi">Contact us</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
