@@ -1,9 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Container, Nav } from 'react-bootstrap';
-import { Link } from "react-router-dom";
 import React from 'react';
 import "../public/nav.css";
-import Contact from '../routes/contact';
+import "../routes/contact";
 
 function Navigation() {
     return (
@@ -14,13 +13,12 @@ function Navigation() {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-auto">
-                            <Nav.Link href="#features" className="navi">How it works</Nav.Link>
+                            <Nav.Link href="../routes/howWorks" className="navi">How it works</Nav.Link>
                             <span className="dots">&bull;</span>
-                            <Nav.Link href="#pricing" className="navi">Who we are</Nav.Link>
+                            <Nav.Link href="../routes/whoWe" className="navi">Who we are</Nav.Link>
                             <span className="dots">&bull;</span>
-                            <Nav.Link href="#pricing" className="navi">What we do</Nav.Link>
+                            <Nav.Link href="../routes/contact" className="navi">Contact us</Nav.Link>
                             <span className="dots">&bull;</span>
-                            <Nav.Link href="#contact" to="../routes/contact" className="navi">Contact us</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

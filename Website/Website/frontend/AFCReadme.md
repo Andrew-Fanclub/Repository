@@ -19,9 +19,13 @@ Also, make sure package.json is full updated everytime you are commiting a new b
 # Things completed/being worked on
 Working on:
 mailer.js - allows for user to email our email through the site
-navbar.js - self explanatory
+contact.js - almost done with layout
+howWorks.js - content needed
+whatWe.js - content needed
+whoWe.js - content needed
 
 Completed:
-nothing yet lmao we kinda behind
+navbar.js done
+footer.js done
 
 # Developed by: Mj, Yik, Cheah, Catherine, Matthew, Brad

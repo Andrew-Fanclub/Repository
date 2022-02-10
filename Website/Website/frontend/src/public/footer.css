@@ -1,0 +1,105 @@
+.footer-bg {
+  height: 40vh;
+  background: #2d3436;
+}
+
+.footer-top {
+  height: 20vh;
+  margin-top: 1rem;
+}
+
+.footer-topic {
+  color: #adadad;
+  font-size: 0.75rem;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.footer-subtext {
+  color: #74b9ff;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+#footer-email {
+  color: #74b9ff;
+  font-weight: 800;
+}
+
+.contact-form {
+  padding-right: 5vw;
+}
+
+.left-col {
+  padding-left: 5vw;
+}
+
+.left-col-right {
+  padding-right: 15vw;
+}
+
+.send-btn {
+  background-color: #74b9ff;
+  color: white;
+  height: 8vh;
+  width: 10vw;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+.message {
+  width: 25vw;
+  height: 8vh;
+}
+
+.form-control::placeholder {
+  color: #74b9ff;
+}
+
+.form-control {
+  border: none;
+  color: #74b9ff;
+  border-radius: 10px;
+  font-size: 0.75rem;
+}
+
+.form-email-icon {
+  background: no-repeat url("../images/envelope-regular.svg");
+}
+
+.form-email-icon:focus {
+  background: no-repeat url("../images/envelope-hover.svg");
+}
+
+.form-user-icon {
+  background: no-repeat url("../images/user-regular.svg");
+}
+
+.form-user-icon:focus {
+  background: no-repeat url("../images/user-hover.svg");
+}
+
+.form-email-icon,
+.form-email-icon:focus,
+.form-user-icon,
+.form-user-icon:focus {
+  background-size: 5%;
+  background-position: 95% 50%;
+  background-color: rgba(156, 156, 156, 0.24);
+}
+
+.form-msg-icon {
+  background: no-repeat url("../images/message-regular.svg");
+}
+
+.form-msg-icon:focus {
+  background: no-repeat url("../images/message-hover.svg");
+}
+
+.form-msg-icon,
+.form-msg-icon:focus {
+  background-size: 5%;
+  background-position: 95% 20%;
+  background-color: rgba(156, 156, 156, 0.24);
+}

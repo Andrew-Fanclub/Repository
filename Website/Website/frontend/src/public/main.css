@@ -4,3 +4,9 @@ h1{
 h2{
     font-size: larger;
 }
+div.pageDesign{
+    background-color: #0f0f0f;
+    color: #1a78c9;
+    padding-bottom: 500px;
+    padding-top: 10px;
+}

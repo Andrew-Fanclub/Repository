@@ -1,30 +1,24 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './public/main.css';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navigation from './components/navbar.js';
-import Contact from './routes/contact';
+import Navigation from './components/navbar';
+import Footer from './components/footer';
 
-function Main(){
-    return(
+function Main() {
+    return (
         <div>
-            <head>
-                <title>AFCPlushies</title>
-                <link rel="icon" href="/favicon.ico"></link>
-            </head>
-            <div>
-                <Router>
-                    <Navigation />
-                    <Routes>
-                        <Route path = '/' exact component={<Main/> } />
-                        <Route path = '/contact' component={<Contact/>} />
-                    </Routes>
-                </Router>
-            </div>
-            <div>
+            <nav>
+                <Navigation />
+            </nav>
+            <div className='pageDesign'>
                 <h1>AFCPlushies</h1>
                 <h2>ROugh DrAft</h2>
+                <p>Use websockets to get data held in sql database</p>
+                <p>Two heroku servers one for front one for back?</p>
+                <p>Has to list scraped plushies here</p>
             </div>
+            <footer>
+                <Footer />
+            </footer>
         </div>
     );
 }
