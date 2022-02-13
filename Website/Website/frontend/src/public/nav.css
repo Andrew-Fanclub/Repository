@@ -11,10 +11,6 @@
   color: #fdcb6e;
 }
 
-.navbar-brand img {
-  width: 7.5rem;
-}
-
 @media screen and (max-width: 992px) {
   .dots {
     display: none;

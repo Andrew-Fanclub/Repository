@@ -13,9 +13,9 @@ function App() {
     <Router>
       <Routes>
         <Route exact path="/" element={<Main />} />
-        <Route exact path="/routes/howWorks" element={<HowWorks />} />
-        <Route exact path="/routes/whoWe" element={<WhoWe />} />
-        <Route exact path="/routes/contact" element={<Contact />} />
+        <Route exact path="/howitWorks" element={<HowWorks />} />
+        <Route exact path="/whoweAre" element={<WhoWe />} />
+        <Route exact path="/contactUs" element={<Contact />} />
       </Routes>
     </Router>
   );
