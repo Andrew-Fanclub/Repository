@@ -1,22 +1,55 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
 import Navigation from '../components/navbar';
 import Footer from '../components/footer';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import "../public/whoWe.css";
 
-function WhoWe(){
-    return(
-        <div>
+function WhoWe() {
+    return (
+        <div className="bg">
             <nav>
                 <Navigation />
             </nav>
-            <div className='pageDesign'>
-                <p>Description of who we are</p>
+            <div className="constraint mt-5 mb-3">
+                <h1 className="title">About Us</h1>
+                <section className='mb-5'>
+                    <h3 className="subTitle">Our Project</h3>
+                    <h4 className='text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eligendi dignissimos maiores magni enim natus? Magnam laboriosam necessitatibus repellendus repudiandae, temporibus at cupiditate autem veritatis blanditiis qui maiores ex quas.</h4>
+                </section>
+                <section className="team">
+                    <h3 className="subTitle">Our Team</h3>
+                    <section className="ms-5">
+                        <Row className="mb-3">
+                            <Col><div className="square"></div></Col>
+                            <Col className="me-5"><p className='teamText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, sequi hic. Consequuntur veniam deleniti quas recusandae quaerat eaque blanditiis consectetur aperiam nobis id</p></Col>
+
+                            <Col><div className="square"></div></Col>
+                            <Col className="me-5"><p className='teamText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, sequi hic. Consequuntur veniam deleniti quas recusandae quaerat eaque blanditiis consectetur aperiam nobis id</p></Col>
+                        </Row>
+                        <Row className="mb-3">
+                            <Col><div className="square"></div></Col>
+                            <Col className="me-5"><p className='teamText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, sequi hic. Consequuntur veniam deleniti quas recusandae quaerat eaque blanditiis consectetur aperiam nobis id</p></Col>
+
+                            <Col><div className="square"></div></Col>
+                            <Col className="me-5"><p className='teamText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, sequi hic. Consequuntur veniam deleniti quas recusandae quaerat eaque blanditiis consectetur aperiam nobis id</p></Col>
+                        </Row>
+                        <Row className="mb-3">
+                            <Col><div className="square"></div></Col>
+                            <Col className="me-5"><p className='teamText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, sequi hic. Consequuntur veniam deleniti quas recusandae quaerat eaque blanditiis consectetur aperiam nobis id</p></Col>
+
+                            <Col><div className="square"></div></Col>
+                            <Col className="me-5"><p className='teamText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, sequi hic. Consequuntur veniam deleniti quas recusandae quaerat eaque blanditiis consectetur aperiam nobis id</p></Col>
+                        </Row>
+                    </section>
+                </section>
             </div>
+
             <footer>
                 <Footer />
             </footer>
-        </div>
-    )
+        </div >
+    );
 }
 
 export default WhoWe;

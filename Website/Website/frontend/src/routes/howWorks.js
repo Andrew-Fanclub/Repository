@@ -1,22 +1,68 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
 import Navigation from '../components/navbar';
 import Footer from '../components/footer';
+import "../public/howWorks.css";
 
-function HowWorks(){
-    return(
-        <div>
+import formSVG from '../images/howWorksImg/Search.png';
+import shareSVG from '../images/howWorksImg/Button.png';
+import groupSVG from '../images/howWorksImg/Results.png';
+
+function HowWorks() {
+    return (
+        <div className="bg">
             <nav>
                 <Navigation />
             </nav>
-            <div className='pageDesign'>
-                <p>Description of how this shit works</p>
+            <div className="mt-5 mb-3">
+                <h1 className="title mb-5">How <span className="midWord">It</span> Works</h1>
+                <div className="progress">
+                    <div className="progress-container">
+                        <img src={formSVG} className="sizeSVG" alt="Create Form Graphic" />
+                        <div className="progress-info-container">
+                            <p className="progress-subtitle">
+                                Search
+                            </p>
+                            <p className="progress-info">
+                                Type in the related terms to plushies that you want to find.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div className="progress-container">
+                        <img src={shareSVG} className="sizeSVG" alt="Create Form Graphic" />
+                        <div className="progress-info-container">
+                            <p className="progress-subtitle">
+                                Press Enter
+                            </p>
+                            <p className="progress-info">
+                                Press the button and our scraper will find the plushies for you.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div className="progress-container">
+                        <img src={groupSVG} className="sizeSVG" alt="Create Group Graphic" />
+                        <div className="progress-info-container">
+                            <p className="progress-subtitle">
+                                Voilà!
+                            </p>
+                            <p className="progress-info">
+                                Have fun scrolling through all of the results!
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
+
             <footer>
                 <Footer />
             </footer>
-        </div>
-    )
+        </div >
+    );
 }
 
 export default HowWorks;
