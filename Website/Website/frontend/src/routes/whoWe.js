@@ -22,10 +22,13 @@ function WhoWe() {
                     <section className="ms-5">
                         <Row className="mb-3">
                             <Col><div className="square"></div></Col>
-                            <Col className="me-5"><p className='teamText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, sequi hic. Consequuntur veniam deleniti quas recusandae quaerat eaque blanditiis consectetur aperiam nobis id</p></Col>
-
+                            <Col className="me-5">
+                                <h5 className='teamTextBold'>Marlon Burog</h5>
+                                <p className='teamText'>1st year Software Engineering major</p></Col>
                             <Col><div className="square"></div></Col>
-                            <Col className="me-5"><p className='teamText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, sequi hic. Consequuntur veniam deleniti quas recusandae quaerat eaque blanditiis consectetur aperiam nobis id</p></Col>
+                            <Col className="me-5">
+                                <h5 className='teamTextBold'>Catherine Nguyen</h5>
+                                <p className='teamText'>3rd Year (Graduating Senior) Computer Science major</p></Col>
                         </Row>
                         <Row className="mb-3">
                             <Col><div className="square"></div></Col>
