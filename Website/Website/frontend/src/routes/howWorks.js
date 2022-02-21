@@ -3,9 +3,9 @@ import Navigation from '../components/navbar';
 import Footer from '../components/footer';
 import "../public/howWorks.css";
 
-import formSVG from '../images/howWorksImg/Search.png';
-import shareSVG from '../images/howWorksImg/Button.png';
-import groupSVG from '../images/howWorksImg/Results.png';
+import Search from '../images/howWorksImg/Search.png';
+import Press from '../images/howWorksImg/Button.png';
+import Result from '../images/howWorksImg/Results.png';
 
 function HowWorks() {
     return (
@@ -17,7 +17,7 @@ function HowWorks() {
                 <h1 className="title mb-5">How <span className="midWord">It</span> Works</h1>
                 <div className="progress">
                     <div className="progress-container">
-                        <img src={formSVG} className="sizeSVG" alt="Create Form Graphic" />
+                        <img src={Search} className="sizeIMG" alt="Create Form Graphic" />
                         <div className="progress-info-container">
                             <p className="progress-subtitle">
                                 Search
@@ -29,7 +29,7 @@ function HowWorks() {
 
                     </div>
                     <div className="progress-container">
-                        <img src={shareSVG} className="sizeSVG" alt="Create Form Graphic" />
+                        <img src={Press} className="sizeIMG" alt="Create Form Graphic" />
                         <div className="progress-info-container">
                             <p className="progress-subtitle">
                                 Press Enter
@@ -42,7 +42,7 @@ function HowWorks() {
                     </div>
 
                     <div className="progress-container">
-                        <img src={groupSVG} className="sizeSVG" alt="Create Group Graphic" />
+                        <img src={Result} className="sizeIMG" alt="Create Group Graphic" />
                         <div className="progress-info-container">
                             <p className="progress-subtitle">
                                 Voilà!
