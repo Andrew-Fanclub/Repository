@@ -26,3 +26,7 @@
   width: 100vw;
   height: 75vh;
 }
+
+.center {
+  margin: 0 auto;
+}
