@@ -1,20 +1,35 @@
 import React from 'react';
+import Carousel from 't-a-e-3d-carousel-reactjs';
 import './public/main.css';
 import Navigation from './components/navbar';
 import Footer from './components/footer';
 
+//take images from cloudinary
+const slides = [
+    {
+        url: 'https://res.cloudinary.com/dzkzpomzf/image/upload/v1645410280/AFC/Octopus_ymdhjt.png'
+    },
+    {
+        url: 'https://res.cloudinary.com/dzkzpomzf/image/upload/v1645410685/AFC/Bread_uoen7x.png'
+    },
+    {
+        url: 'https://res.cloudinary.com/dzkzpomzf/image/upload/v1645410684/AFC/Squid_ixn7ez.png'
+    }
+];
+
 function Main() {
     return (
-        <div>
+        <div className='bg'>
             <nav>
                 <Navigation />
             </nav>
-            <div className='pageDesign'>
-                <h1>AFCPlushies</h1>
-                <h2>ROugh DrAft</h2>
-                <p>Use websockets to get data held in sql database</p>
-                <p>Two heroku servers one for front one for back?</p>
-                <p>Has to list scraped plushies here</p>
+            <div className="headerContent">
+                <h1 className='title'>Find the <span className="midWord">perfect</span> plushie</h1>
+                <h1 className='titleBottomText'>for you and others!</h1>
+                <Carousel imageList={slides} autoplay={true} showArrows={false} className='center' />
+            </div>
+            <div className='searchContent'>
+                {/*Search*/}
             </div>
             <footer>
                 <Footer />
