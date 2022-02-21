@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from 'react-bootstrap';
 import React from 'react';
 import "../public/footer.css";
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
@@ -10,15 +11,15 @@ function Footer() {
                 <div className="d-flex flex-row justify-content-between">
                     <div className="col footer-top left-col">
                         <section className="mt-3">
-                            <p className="footer-topic">INFORMATION</p>
+                            <p className="footer-topic mb-2">INFORMATION</p>
                             <div className="row">
                                 <div className="col">
-                                    <p className="footer-subtext">About AFCPlushies</p>
+                                    <Link className="footer-subtext" to="/aboutUs">About AFCPlushies</Link>
                                     <p className="footer-subtext">Take Our Quiz</p>
                                     <p className="footer-subtext">Things We Like</p>
                                 </div>
                                 <div className="col left-col-right">
-                                    <p className="footer-subtext">FAQ</p>
+                                    <Link className="footer-subtext" to="/howItWorks">How It Works</Link>
                                     <p className="footer-subtext">Privacy Policy</p>
                                     <p className="footer-subtext">Terms of Service</p>
                                 </div>
@@ -27,7 +28,7 @@ function Footer() {
                     </div>
                     <div className="col footer-top ps-2">
                         <section className="mt-3">
-                            <p className="footer-topic">CONTACT US</p>
+                            <p className="footer-topic mb-2">CONTACT US</p>
                             <h5 id="footer-email" className="mb-4">afcplushies@gmail.com</h5>
                         </section>
                         <section>
