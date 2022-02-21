@@ -23,13 +23,16 @@ function Main() {
             <nav>
                 <Navigation />
             </nav>
-            <div className="headerContent">
+            <div className="headerContent mb-5">
                 <h1 className='title'>Find the <span className="midWord">perfect</span> plushie</h1>
                 <h1 className='titleBottomText'>for you and others!</h1>
-                <Carousel imageList={slides} autoplay={true} showArrows={false} className='center' />
+                <Carousel imageList={slides} autoplay={true} interval={5000} showArrows={false} className='center' />
             </div>
             <div className='searchContent'>
-                {/*Search*/}
+                <form>
+                    <input type="text" placeholder='Panda Plushie' />
+                    <button className="searchBarBtn"></button>
+                </form>
             </div>
             <footer>
                 <Footer />
