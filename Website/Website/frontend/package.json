@@ -16,6 +16,8 @@
     "react": "^17.0.2",
     "react-bootstrap": "^2.1.0",
     "react-dom": "^17.0.2",
+    "react-dynamic-star": "^0.0.2",
+    "react-paginate": "^8.1.2",
     "react-router-dom": "6",
     "react-scripts": "5.0.0",
     "t-a-e-3d-carousel-reactjs": "^1.0.8",
