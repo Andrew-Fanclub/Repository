@@ -3,6 +3,7 @@
   background-color: #181818;
   background-position: top right;
   background-size: 90vw 100vh;
+  margin: auto;
 }
 .title {
   color: #0984e3;
@@ -20,42 +21,13 @@
 }
 .headerContent {
   width: 100vw;
-  height: 100vh;
+  height: 50vh;
 }
 .searchContent {
   width: 100vw;
   height: 75vh;
-  text-align: center;
 }
 
 .center {
   margin: 0 auto;
-}
-
-input[type="text"] {
-  box-sizing: border-box;
-  border: 0.1rem solid #d7d7d7;
-  height: 3rem;
-  font-size: 2rem;
-  vertical-align: middle;
-}
-
-input[type="text"]::placeholder {
-  color: #d7d7d7;
-  font-size: 1.75rem;
-  padding-left: 1rem;
-}
-
-.searchBarBtn {
-  font-size: 2rem;
-  padding: 0 1rem;
-  margin-left: 0;
-  border: none;
-  background: url(../images/Search_Result.png) no-repeat;
-  background-position: center;
-  background-size: 50% 50%;
-  width: 3rem;
-  height: 3rem;
-  background-color: #74b9ff;
-  vertical-align: middle;
 }

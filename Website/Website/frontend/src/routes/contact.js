@@ -14,15 +14,15 @@ function Contact() {
                 <form className="contact-form">
                     <div className="row mb-4">
                         <div className="col">
-                            <input type="text" placeholder="Your Name" className="form-user-icon form-control" />
+                            <input type="text" placeholder="Your Name" className="form-user-icon form-control" name='name'/>
                         </div>
                         <div className="col">
-                            <input type="email" placeholder="E-mail" className="form-email-icon form-control" />
+                            <input type="email" placeholder="E-mail" className="form-email-icon form-control" name='email'/>
                         </div>
                     </div>
                     <div className="row mb-4">
                         <div className="col">
-                            <textarea placeholder="Leave your message" className="form-msg-icon form-control message"></textarea></div>
+                            <textarea placeholder="Leave your message" className="form-msg-icon form-control message" name='message'></textarea></div>
                     </div>
                     <div className="row">
                         <div className="col-sm">

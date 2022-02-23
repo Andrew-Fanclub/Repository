@@ -4,6 +4,8 @@ import Footer from '../components/footer';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import "../public/whoWe.css";
+import mj from "../images/team/mj.JPG";
+import catherine from "../images/team/catherine.jpg";
 
 function WhoWe() {
     return (
@@ -15,34 +17,48 @@ function WhoWe() {
                 <h1 className="title">About Us</h1>
                 <section className='mb-5'>
                     <h3 className="subTitle">Our Project</h3>
-                    <h4 className='text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eligendi dignissimos maiores magni enim natus? Magnam laboriosam necessitatibus repellendus repudiandae, temporibus at cupiditate autem veritatis blanditiis qui maiores ex quas.</h4>
+                    <h4 className='text'>AFCPlushies is a webscraper built with ReactJS, SQL, Node, and Python in order to be the next Amazon - but for plushies!</h4>
                 </section>
                 <section className="team">
                     <h3 className="subTitle">Our Team</h3>
                     <section className="ms-5">
                         <Row className="mb-3">
-                            <Col><div className="square"></div></Col>
+                            <Col><div className="square"><img className='team' src= {mj} placeholder='mj' /></div></Col>
                             <Col className="me-5">
                                 <h5 className='teamTextBold'>Marlon Burog</h5>
-                                <p className='teamText'>1st year Software Engineering major</p></Col>
-                            <Col><div className="square"></div></Col>
+                                <p className='teamText'>1st year Software Engineering major</p>
+                            </Col>
+                            <Col><div className="square"><img className='team' src= {catherine} placeholder='catherine' /></div></Col>
                             <Col className="me-5">
                                 <h5 className='teamTextBold'>Catherine Nguyen</h5>
-                                <p className='teamText'>3rd Year (Graduating Senior) Computer Science major</p></Col>
+                                <p className='teamText'>3rd Year (Graduating Senior) Computer Science major</p>
+                            </Col>
                         </Row>
                         <Row className="mb-3">
                             <Col><div className="square"></div></Col>
-                            <Col className="me-5"><p className='teamText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, sequi hic. Consequuntur veniam deleniti quas recusandae quaerat eaque blanditiis consectetur aperiam nobis id</p></Col>
+                            <Col className="me-5">
+                                <h5 className='teamTextBold'>Yik Haw Teoh</h5>
+                                <p className='teamText'>Teammate</p>
+                            </Col>
 
                             <Col><div className="square"></div></Col>
-                            <Col className="me-5"><p className='teamText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, sequi hic. Consequuntur veniam deleniti quas recusandae quaerat eaque blanditiis consectetur aperiam nobis id</p></Col>
+                            <Col className="me-5">
+                                <h5 className='teamTextBold'>Matthew Chan</h5>
+                                <p className='teamText'>Teammate</p>
+                            </Col>
                         </Row>
                         <Row className="mb-3">
                             <Col><div className="square"></div></Col>
-                            <Col className="me-5"><p className='teamText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, sequi hic. Consequuntur veniam deleniti quas recusandae quaerat eaque blanditiis consectetur aperiam nobis id</p></Col>
+                            <Col className="me-5">
+                                <h5 className='teamTextBold'>Wen Hui Cheah</h5>
+                                <p className='teamText'>Teammate</p>
+                            </Col>
 
                             <Col><div className="square"></div></Col>
-                            <Col className="me-5"><p className='teamText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, sequi hic. Consequuntur veniam deleniti quas recusandae quaerat eaque blanditiis consectetur aperiam nobis id</p></Col>
+                            <Col className="me-5">
+                                <h5 className='teamTextBold'>Brad Lee</h5>
+                                <p className='teamText'>Teammate</p>
+                            </Col>
                         </Row>
                     </section>
                 </section>
