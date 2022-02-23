@@ -19,18 +19,19 @@
 }
 
 .team {
-  height: 115vh;
+  height: 90vh;
 }
 
 .teamText {
   color: white;
 }
 
-.teamTextBold{
+.teamTextBold {
   color: #0984e3;
 }
 
 img.team {
   height: 11rem;
   width: 10.5rem;
+  overflow: hidden;
 }
