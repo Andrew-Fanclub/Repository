@@ -5,7 +5,7 @@ import { Row, Col } from 'react-bootstrap';
 const AvailablePlushies = (props) => {
     const plushiesList =
         props.list && props.list.map(plushie =>
-            <Col className='col-3' key={plushie.id}>
+            <Col className='col-3 mb-3' key={plushie.id}>
                 <PlushieItem id={plushie.id} title={plushie.title} src={plushie.src} price={plushie.price} shipping={plushie.shipping} rating={plushie.rating} />
             </Col>
         );
