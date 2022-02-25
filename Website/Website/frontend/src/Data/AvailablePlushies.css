@@ -1,0 +1,7 @@
+/* future styling */
+.col {
+  transition: transform 1000ms;
+}
+.col:hover {
+  transform: scale(1.25);
+}
